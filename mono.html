@@ -9,19 +9,8 @@
     <script type="text/javascript" src="node_modules/hammerjs/hammer.min.js"></script>
 
     <style type="text/css">
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #000000; 
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .page-container { text-align: center; }
-        .dosbox-container { width: 640px; height: 400px; }
-        .dosbox-container > .dosbox-overlay { background: url(cover.png); }
-    </style>
+    .dosbox-container { width: 640px; height: 400px; }
+  </style>
 
   </head>
   <body>
@@ -37,7 +26,6 @@
       var dosbox = new Dosbox({
         id: "dosbox",
         onload: function (dosbox) {
-	dosbox.requestFullScreen();	
           dosbox.run("gorilla.zip", "./gorilla.exe");
         },
         onrun: function (dosbox, app) {
