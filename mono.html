@@ -18,7 +18,7 @@
          var dosbox = new Dosbox({
            id: "dosbox",
            onload: function (dosbox) {
-             dosbox.run("gorilla.zip", "./gorilla.com");
+             dosbox.run("gorilla.zip", "c:\");
            },
            onrun: function (dosbox, app) {
              console.log("App '" + app + "' is runned");
