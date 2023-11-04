@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <title>Lode Runner in a Box</title>
+    <title>gorilla</title>
 
     <script type="text/javascript" src="js-dos-api-3.0.js"></script>
     <script type="text/javascript" src="node_modules/hammerjs/hammer.min.js"></script>
@@ -29,7 +29,6 @@
     <div class="page-container">
       <div id="dosbox"></div>
       <br/>
-      <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
     </div>
     
     <script type="text/javascript">
@@ -38,6 +37,7 @@
       var dosbox = new Dosbox({
         id: "dosbox",
         onload: function (dosbox) {
+	dosbox.requestFullScreen();	
           dosbox.run("gorilla.zip", "./gorilla.exe");
         },
         onrun: function (dosbox, app) {
