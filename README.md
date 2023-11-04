@@ -27,3 +27,4 @@ Made possible using:
 * [HammerJS](https://js-dos.com/)
 
 see [LICENSE](LICENSE) file.
+[js-dos(https://js-dos.com/getting-started/)
